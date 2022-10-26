@@ -25,6 +25,7 @@ header {
     font-style: italic;
     padding: 0 2rem;
 }
+
 h2 {
     margin-bottom: 60px;
     text-align: center;
@@ -48,7 +49,7 @@ form {
     height: 95vh;
     background-color: #222222;
     color: #fff;
-    padding: 10vh 30vw;
+    padding: 8vh 30vw;
 }
 
 input,
