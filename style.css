@@ -9,17 +9,18 @@
 p {
     padding: 10px;
 }
-
-nav {
+header {
     height: 80px;
     background: #fdcc04;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0rem 15vw;
+    position: fixed;
+    width: 100%;
 }
 
-header {
+header h1 {
     font-size: 1.5rem;
     font-weight: bold;
     font-style: italic;
@@ -32,13 +33,13 @@ h2 {
     font-size: 2rem;
 }
 
-nav a {
+header a {
     text-decoration: none;
     color: #222222;
     padding: 0 1.5rem;
 }
 
-nav a:hover {
+header a:hover {
     color: #fff;
     transition: 0.3s;
 }
@@ -46,7 +47,7 @@ nav a:hover {
 form {
     display: flex;
     align-self: center;
-    height: 95vh;
+    height: 100%;
     background-color: #222222;
     color: #fff;
     padding: 8vh 30vw;
@@ -119,6 +120,16 @@ textarea {
     transition: 0.3s;
 }
 
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input label {
+    width: 30%;
+}
+
 #CTA-button {
     padding: 1rem 3rem;
     font-size: 1rem;
@@ -138,4 +149,60 @@ textarea {
 
 #home {
     background: #fdcc04;
+}
+
+.about {
+    display: flex;
+    padding: 3rem 15vw;
+    justify-content: space-between;
+}
+
+.about_main {
+    width: 60%;
+}
+
+.about_main h2 {
+    padding: 2rem 0;
+    margin: 0;
+    color: #222222;
+}
+
+.about_main p {
+    text-align: justify;
+    color: #222222;
+    font-size: 1.5rem;
+}
+
+.about .img_dev_profile{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.img-dev {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.title__network{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte-padrao);
+}
+
+
+
+.title__network a, .title__network li {
+    text-decoration: none;
+    list-style: none;
+    color: #222222;
+}
+
+.title__network a:hover{
+    color: #fdcc04;
 }

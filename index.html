@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <nav>
-        <header>MEU NOME</header>
+    <header>
+        <h1>JONATHAN OLIVEIRA</h1>
         <section class="nav-items">
-            <a href=#>Home</a> <a href=#>Sobre</a> <a href=#form>Formulário</a>
+            <a href=#home>Home</a> <a href=#sobre>Sobre</a> <a href=#form_contato>Formulário</a>
         </section>
-    </nav>
+    </header>
     <section id="home">
         <div class="container">
             <div class="column-left">
@@ -30,41 +30,91 @@
             </div>
         </div>
     </section>
+    <section id="sobre" class="about">
+        <div class="about_main">
+            <h2>Sobre Min:</h2>
+            <p>
+                Olá, meu nome é Jonathan dos Santos Oliveira e sou Desenvolvedor Front End. Sou formado em Engenharia Civil e no início de 2022 decidi inovar profissionalmente iniciando os estudos na área de programação e logo descobrir uma área encantadora. Hoje estou em transição de carreira e busco meu primeiro desafio como Desenvolvedor Jr. Gosto de praticar esportes, além de assistir filmes e séries. E como parte do meu desenvolvimento, realizo trabalho social em um grupo chamado A Depressão Tem Cura, onde ajudamos pessoas que sofrem com depressão a recuperar a alegria de viver.
+            </p>
+            <ul class="title__network">
+                <!-- Links de suas redes sociais -->
+                <li class="title__network__item">
+                    <a href="https://github.com/jonathansoliveira" target="_blank">
+                        Github <img src="arrow.png"> 
+                    </a>
+                </li>
+                <li class="title__network__item">
+                    <a href="https://www.linkedin.com/in/jonathansoliveira77/" target="_blank">
+                        Linkedin <img src="arrow.png">
+                    </a>
+                </li>
+                <li class="title__network__item">
+                    <a href="https://www.instagram.com/jonatthan.o/" target="_blank">
+                        Instagram <img src="arrow.png">
+                    </a>
+                </li>
+                <li class="title__network__item">
+                    <a href="https://drive.google.com/file/d/18yoxZ5WYJSnh2HlAVS7O51vETWp9l7nN/view" target="_blank">
+                        Curriculo <img src="arrow.png" target="_blank">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="img_dev_profile">
+            <img src="profile.jfif" alt="Foto do perfil do desenvolvedor" class="img-dev">
+        </div>
+    </section>
     <form id="form" action="http://google.com">
 
-        <section>
+        <section id="form_contato">
             <h2>Formulário de Interesses</h2>
             <p>Digite seu nome:
                 <input type="text" name="userName" size=40 maxlength=40 placeholder="Digite seu nome completo">
             </p>
-            <p>Digite sua profissão:
-                <input type="text" name="userJob" size=40 maxlength=40 placeholder="Digite sua profissão">
+            <p>Digite seu e-mail:
+                <input type="e-mail" name="userJob" size=40 maxlength=40 placeholder="email@email.com">
             </p>
-            <p>Nos conte um pouquinho sobre você:
+            <p>Escreva sua mensagem:
                 <textarea name="userComment" cols="30" rows="4"></textarea>
             </p>
-            <p>Você faz exercícios regularmente?
-                <input type="radio" name="exercise" value=1>Sim
-                <input type="radio" name="exercise" value=2>Não
+            <p>Gostaria de receber novidades de projetos assim que lançados?
+                <div class="input">
+                    <label for="radio__sim">Sim</label>
+                    <input type="radio" name="exercise" value=1 id="radio__sim">
+                </div>
+                <div class="input">
+                    <label for="radio__nao">Não</label>
+                    <input type="radio" name="exercise" value=2 id="radio__nao">
+                </div>
             </p>
-            <p>Por onde você lê sobre seus tópicos favoritos?
-                <input type="checkbox" name="Books">Livros
-                <input type="checkbox" name="Web">Sites
-                <input type="checkbox" name="Apps">Aplicativos
-                <input type="checkbox" name="Magazines">Revistas
+            <p>Para quais áreas você procura um profissional?
+                <div class="input">
+                    <label for="fullstack">FullStack</label><input type="checkbox" name="fullStack" id="fullstack">
+                </div>
+                <div class="input">
+                    <label for="frontend">Front-End</label>
+                    <input type="checkbox" name="frontEnd" id="frontend">
+                </div>
+                <div class="input">
+                    <label for="backend">Back-End</label>
+                    <input type="checkbox" name="backEnd" id="backend" >
+                </div>
+                <div class="input">
+                    <label for="datascience">Data-Science</label>
+                    <input type="checkbox" name="dataScience" id="datascience">
+                </div>
             </p>
-            <p>Qual gênero de filmes que você mais gosta?
+            <p>De que forma você gostaria de ser respondido?
                 <select name="moviePref">
                     <option></option>
-                    <option value=1>Comédia</option>
-                    <option value=2>Romance</option>
-                    <option value=3>Drama</option>
-                    <option value=4>Terror</option>
-                    <option value=5>Ação</option>
+                    <option value=1>E-mail</option>
+                    <option value=2>Whatsapp</option>
+                    <option value=3>Ligação</option>
+                    <option value=4>Video-Chamada</option>
                 </select>
             </p>
             <input id="form-button" type=submit value="ENVIAR">
-        </section>
+        </section>      
     </form>
 </body>
 
